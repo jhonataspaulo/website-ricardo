@@ -17,7 +17,7 @@ const back = css({
 
 export function Footer() {
   return (
-    <Section background={back} idSection="footer">
+    <Section background={back} idSection="contact">
       <Content>
         <Profile>
           <div>
