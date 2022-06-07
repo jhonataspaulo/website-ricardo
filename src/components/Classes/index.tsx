@@ -21,7 +21,9 @@ export function Classes() {
           agende seu treinamento.
         </p>
         <div>
-          <Button colorButton="black">Entrar em contato</Button>
+          <a href="https://api.whatsapp.com/send?phone=5599991947529">
+            <Button colorButton="black">Entrar em contato</Button>
+          </a>
         </div>
       </Content>
     </Section>

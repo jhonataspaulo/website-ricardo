@@ -5,6 +5,7 @@ import {Instagram} from './Instagram';
 import {Photoshop} from './Photoshop';
 import {Illustrator} from './Illustrator';
 import {CorelDraw} from './Coreldraw';
+import { Behance } from './Behance';
 
 export {
   WhatsApp,
@@ -13,5 +14,6 @@ export {
   Instagram,
   Photoshop,
   Illustrator,
-  CorelDraw
+  CorelDraw,
+  Behance
 };

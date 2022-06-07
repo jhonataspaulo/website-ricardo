@@ -1,5 +1,5 @@
 import {css} from '../../stitches.config';
-import {Facebook, Instagram, Twitter, WhatsApp} from '../Shared/Icons';
+import {Behance, Facebook, Instagram, Twitter, WhatsApp} from '../Shared/Icons';
 import {Section} from '../Shared/Section';
 import {
   Content,
@@ -33,6 +33,9 @@ export function Footer() {
             </a>
             <a href="https://www.instagram.com/ricardoalbertini_rd/">
               <Instagram sizeIcon="mobile" colorHover="#F66041" />
+            </a>
+            <a href="https://www.behance.net/dk25ra7c10">
+              <Behance sizeIcon="mobile" colorHover="#1664F2" />
             </a>
           </SocialLinks>
         </Profile>

@@ -26,7 +26,7 @@ export const SkillsBox = styled('div', {
   },
 
   '@bp2': {
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1fr 1fr'
   }
 });
 
@@ -35,6 +35,7 @@ export const Skill = styled('div', {
   backgroundColor: '$white',
   padding: '3rem',
   borderRadius: '3rem',
+  transition: 'all 500ms',
   '& h2': {
     fontSize: '2.2rem',
     fontWeight: 700,
@@ -45,5 +46,9 @@ export const Skill = styled('div', {
     fontWeight: 400,
     color: '$black400',
     marginTop: '1rem'
+  },
+  '&:hover': {
+    transform: 'scale(1.02)',
+    boxShadow: '0px 31px 31px rgba(0, 0, 0, 0.2)'
   }
 });

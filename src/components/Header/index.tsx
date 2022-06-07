@@ -1,7 +1,7 @@
 import {css} from '../../stitches.config';
 import {Section} from '../Shared/Section';
 import {Button} from '../Shared/Button';
-import {WhatsApp, Facebook, Twitter, Instagram} from '../Shared/Icons';
+import {WhatsApp, Facebook, Twitter, Instagram, Behance} from '../Shared/Icons';
 import backgroundUrl from '../../assets/background.png';
 
 import {HeaderContainer, Info, Profile, SocialLinks} from './styles';
@@ -58,6 +58,9 @@ export function Header() {
           </a>
           <a href="https://www.instagram.com/ricardoalbertini_rd/">
             <Instagram color="black" sizeIcon="mobile" colorHover="#F66041" />
+          </a>
+          <a href="https://www.behance.net/dk25ra7c10">
+            <Behance color="black" sizeIcon="mobile" colorHover="#1664F2" />
           </a>
         </SocialLinks>
       </Info>
