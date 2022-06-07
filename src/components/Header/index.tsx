@@ -1,11 +1,26 @@
 import {css} from '../../stitches.config';
 import {Section} from '../Shared/Section';
 import {Button} from '../Shared/Button';
-import {WhatsApp, Facebook, Twitter, Instagram, Behance} from '../Shared/Icons';
+import {
+  WhatsApp,
+  Facebook,
+  Twitter,
+  Instagram,
+  Behance,
+  MenuOpen,
+  MenuClose
+} from '../Shared/Icons';
 import backgroundUrl from '../../assets/background.png';
 
-import {HeaderContainer, Info, Profile, SocialLinks} from './styles';
-import {MenuOpen} from '../Shared/Icons/MenuOpen';
+import {
+  HeaderContainer,
+  Info,
+  Profile,
+  SocialLinks,
+  MenuMobile,
+  Navigation,
+  BtnToggleMenu
+} from './styles';
 
 const back = css({
   minHeight: '100vh',
@@ -23,19 +38,35 @@ const back = css({
 });
 
 export function Header() {
+  function toggleMenu() {
+    const menu = document.querySelector('#menu-mobile');
+    menu?.classList.toggle('active');
+  }
+
   return (
     <Section background={back} idSection="home">
       <HeaderContainer>
         <h1>Ricardo</h1>
-        <nav>
+        <Navigation>
           <a href="#about">Sobre mim</a>
           <a href="#classes">Aulas</a>
           <a href="#skills">Habilidades</a>
           <a href="#contact">Contato</a>
-        </nav>
-        <div>
+        </Navigation>
+        <BtnToggleMenu onClick={() => toggleMenu()}>
           <MenuOpen color="black" sizeIcon="mobile" />
-        </div>
+        </BtnToggleMenu>
+        <MenuMobile id="menu-mobile" className="">
+          <BtnToggleMenu onClick={() => toggleMenu()}>
+            <MenuClose color="white" sizeIcon="default" />
+          </BtnToggleMenu>
+          <nav>
+            <a href="#about" onClick={() => toggleMenu()}>Sobre mim</a>
+            <a href="#classes" onClick={() => toggleMenu()}>Aulas</a>
+            <a href="#skills" onClick={() => toggleMenu()}>Habilidades</a>
+            <a href="#contact" onClick={() => toggleMenu()}>Contato</a>
+          </nav>
+        </MenuMobile>
       </HeaderContainer>
       <Info>
         <Profile>

@@ -27,11 +27,18 @@ type Props = {
   size?: any;
   children?: React.ReactNode;
   hover?: string;
+  onClick?: () => void;
 };
 
-export function IconWrapper({size = 'default', children, hover}: Props) {
+export function IconWrapper({
+  size = 'default',
+  children,
+  hover,
+  onClick
+}: Props) {
   return (
     <Container
+      onClick={onClick}
       size={size}
       css={{
         '&:hover > svg > path': {
